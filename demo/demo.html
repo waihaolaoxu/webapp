@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no" >
+	<title>移动webapp JS类库</title>
+	<link rel="stylesheet" href="css/webapp.css">
+	<script src="js/webapp.js"></script>
+	<script type="text/javascript">
+	//设置rem
+	$app.setRem(640);
+	</script>
+	<style type="text/css">
+	.rem{font-size:0.5rem;}
+	h2{border-left:solid 2px #f00;line-height: 25px;font-size:14px;padding-left:15px;color:#666;margin-top: 25px}
+	
+	.touch{height:220px;background: #eee;}
+	.touch ul{padding:15px;}
+	</style>
+</head>
+<body>
+<header class="top-head">移动webapp JS类库</header>
+<div class="pd">
+	<div class="rem mt15" align="center">0.5rem</div>
+	<h2>touch事件支持左右滑动、上下滑动</h2>
+	<div class="touch mt15" id="touch">
+		<ul>
+			<li>Left：<span id="left"></span></li>
+			<li>Top：<span id="top"></span></li>
+			<li>方向：<span id="fx"></span></li>
+		</ul>
+	</div>
+</div>
+<div class="footer">
+	<footer>
+		Copyright © 2016 前端老徐 All rights reserved<br>京ICP备15016412号	
+	</footer>
+</div>
+
+<script type="text/javascript">
+//滑动
+$app.touch({
+	id:"touch",
+	move:function(left,top){
+		$app.$('#left').innerHTML=left;
+		$app.$('#top').innerHTML=top;
+	},
+	end:function(e){
+		$app.$('#fx').innerHTML=e;
+	}
+})
+</script>
+</body>
+</html>

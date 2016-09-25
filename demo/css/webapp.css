@@ -1,0 +1,54 @@
+*{margin:0;padding:0;-webkit-tap-highlight-color: rgba(255, 0, 0, 0); outline: none; box-sizing: border-box;}
+html{height:100%;overflow-x:hidden;}
+body{font-size:14px;line-height: 1.5;position: relative;min-height: 100%;}/*body必须是min-height 配合底部效果*/
+ul,ol{list-style: none;}
+
+/*外观*/
+.pc{background: #ccc;}
+.pc body{max-width: 640px;margin:0 auto;position: relative;background: #fff;}
+
+/*填充*/
+.pd{padding:0 0.3rem;}
+
+/*间距*/
+.mt5{margin-top: 5px !important;}
+.mt10{margin-top: 10px !important;}
+.mt15{margin-top: 15px !important;}
+.mt20{margin-top: 20px !important;}
+.mt25{margin-top: 25px !important;}
+.mt30{margin-top: 30px !important;}
+.mt35{margin-top: 35px !important;}
+.mt40{margin-top: 40px !important;}
+
+/*定位*/
+.pr{position: relative !important;}
+.pa{position: absolute !important;}
+.pf{position: fixed !important;}
+
+/*字号*/
+.f12{font-size: 12px !important;}
+.f14{font-size: 14px !important;}
+.f16{font-size: 16px !important;}
+.f18{font-size: 18px !important;}
+.f20{font-size: 20px !important;}
+.f22{font-size: 22px !important;}
+
+/*按钮*/
+.btn{background: #ddd;border:solid 1px #ccc;text-align: center;padding: 10px 0;}
+.btn-red{background: #f00;color:#fff;}
+.btn-block{display: block;}
+
+/*头部*/
+.top-head{height:45px;line-height: 45px;background: #000;color:#fff;text-align: center;}
+
+/*底部*/
+.footer{height:77px;margin-top: 20px;}
+.footer footer{text-align: center;font-size: 12px;color:#999;border-top: solid 1px #eee;position:absolute;bottom:0;left:0;width: 100%;padding: 20px 0;}
+
+
+
+
+
+
+
+
